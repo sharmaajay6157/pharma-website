@@ -1,5 +1,6 @@
 import "../styles/newNavbar.css";
 import logopharma from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function NewNavbar() {
   return (
@@ -27,33 +28,33 @@ function NewNavbar() {
         >
           <ul className="navbar-nav ">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <Link to="/" className="nav-link active">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/aboutus" className="nav-link ">
                 About Us
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/products" className="nav-link ">
                 Products
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Therapeutic Areas
-              </a>
+              <Link to="/" className="nav-link ">
+                Theraputic Areas
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/" className="nav-link ">
                 Quality
-              </a>
+              </Link>
             </li>
           </ul>
 
