@@ -1,0 +1,50 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  border: 1px solid black;
+}
+.logoContainer {
+  width: 15%;
+  /* border: 1px solid red; */
+}
+
+.logoContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.navbarLinks {
+  padding-top: 15px;
+  width: 70%;
+  /* border: 1px solid red; */
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style: none;
+  /* border: 1px solid green; */
+  padding: 22px;
+}
+li {
+  text-decoration: none;
+  /* border: 1px solid yellow; */
+}
+.navbtn {
+  border-radius: 10px;
+  background-color: #dc2626;
+  color: white;
+  padding: 10px;
+  border: none;
+  /* width: 90%; */
+  margin: 30px 15px 0 0;
+}
+.navbarButton {
+  width: 15%;
+}
+.phoneLogo {
+  margin-right: 10px;
+  color: white;
+}

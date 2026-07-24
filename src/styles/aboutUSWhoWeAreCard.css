@@ -1,0 +1,169 @@
+.about-details-section {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.about-left-column {
+  padding-right: 50px;
+}
+
+.about-small-heading {
+  color: #ef2026;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-heading-line {
+  width: 45px;
+  height: 3px;
+  background: #ef2026;
+  margin-bottom: 25px;
+}
+
+.about-main-heading {
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about-main-heading span {
+  color: #ef2026;
+}
+
+.about-description {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+.about-journey-btn {
+  background: #ef2026;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 13px 28px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-journey-btn:hover {
+  background: #c9151c;
+}
+
+.about-right-column {
+  padding-left: 20px;
+}
+
+.about-card-column {
+  margin-bottom: 25px;
+}
+
+.about-info-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.about-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.about-icon-circle i {
+  font-size: 34px;
+  color: #ef2026;
+}
+
+.about-info-card h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-info-card p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-values-list li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #444;
+}
+
+.about-values-list i {
+  color: #ef2026;
+  margin-right: 8px;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .about-left-column {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .about-right-column {
+    padding-left: 0;
+  }
+
+  .about-main-heading {
+    font-size: 42px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .about-details-section {
+    padding: 60px 0;
+  }
+
+  .about-main-heading {
+    font-size: 34px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .about-info-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-values-list {
+    text-align: left;
+  }
+
+  .about-journey-btn {
+    width: auto;
+  }
+}

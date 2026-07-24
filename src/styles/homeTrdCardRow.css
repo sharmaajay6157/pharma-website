@@ -1,0 +1,32 @@
+.stats-section {
+  background-color: #b91c1c;
+  padding: 20px 0px;
+  color: white;
+}
+
+.stat-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.stat-icon {
+  font-size: 32px;
+}
+
+.trdCardHead {
+  font-size: 35px;
+  /* font-weight: bold; */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.trdCardPara {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    border-right: none;
+    margin-bottom: 30px;
+  }
+}
