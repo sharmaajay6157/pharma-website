@@ -8,20 +8,20 @@
 }
 
 .footer-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
 .footer-tag {
   /* color: #ffffff; */
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .footer-desc {
   /* color: #f2f2f2; */
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.2;
+  font-size: 14px;
 }
 
 .footer-list {
@@ -32,7 +32,8 @@
 
 .footer-list li {
   margin-bottom: 12px;
-  line-height: 1.6;
+  line-height: 1;
+  font-size: 14px;
 }
 
 .footer-list a {
@@ -56,7 +57,7 @@
 
 .footer-contact i {
   color: #8b0000;
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 3px;
 }
 
@@ -86,13 +87,13 @@
 
 .footer-copy {
   text-align: center;
-  padding: 18px;
+  padding: 8px;
   border-top: 1px solid rgba(22, 21, 21, 0.2);
-  font-size: 15px;
+  font-size: 14px;
   color: black;
 }
 .footer-logo {
-  width: 170px;
+  width: 150px;
   height: auto;
 }
 h6,

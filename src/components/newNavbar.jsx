@@ -46,14 +46,14 @@ function NewNavbar() {
             </li>
 
             <li className="nav-item">
-              <Link to="/" className="nav-link ">
-                Theraputic Areas
+              <Link to="/therapeuticareas" className="nav-link ">
+                Therapeutic Areas
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/" className="nav-link ">
-                Quality
+              <Link to="/career" className="nav-link ">
+                Career
               </Link>
             </li>
           </ul>

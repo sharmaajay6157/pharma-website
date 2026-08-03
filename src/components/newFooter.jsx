@@ -4,10 +4,10 @@ import "../styles/newFooter.css";
 export default function Footer() {
   return (
     <footer className="forwell-footer">
-      <div className="container py-5">
-        <div className="row g-4">
+      <div className="container ">
+        <div className="row g-2 pb-2">
           {/* Brand column */}
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-3 ">
             {/* <Logo height={44} /> */}
             <img
               src={Logo}

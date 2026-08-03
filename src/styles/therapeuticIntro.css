@@ -1,0 +1,82 @@
+.therapeutic-intro-section {
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+.therapeutic-content {
+  padding-right: 45px;
+}
+
+.therapeutic-subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.therapeutic-line {
+  width: 60px;
+  height: 3px;
+  background: #dc2626;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.therapeutic-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.therapeutic-title span {
+  color: #dc2626;
+}
+
+.therapeutic-description {
+  color: #4b5563;
+  line-height: 1.9;
+  font-size: 0.94rem;
+  /* margin-bottom: 24px; */
+}
+
+.therapeutic-image-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+}
+
+.therapeutic-image {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.therapeutic-image:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  .therapeutic-intro-section {
+    padding: 70px 0;
+  }
+
+  .therapeutic-content {
+    padding-right: 0;
+    margin-bottom: 45px;
+  }
+
+  .therapeutic-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .therapeutic-title {
+    font-size: 2rem;
+  }
+
+  .therapeutic-description {
+    font-size: 0.96rem;
+  }
+}

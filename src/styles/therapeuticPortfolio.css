@@ -1,0 +1,143 @@
+/* ===========================
+   THERAPEUTIC PORTFOLIO
+=========================== */
+
+.therapeutic-portfolio-section {
+  padding: 40px 0px 50px 0px;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.therapeutic-portfolio-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.therapeutic-portfolio-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  /* margin-bottom: 12px; */
+}
+
+.therapeutic-portfolio-line {
+  width: 65px;
+  height: 4px;
+  background: #dc2626;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.therapeutic-portfolio-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 1px 22px;
+
+  height: 100%;
+
+  border-right: 1px solid #e8e8e8;
+
+  transition: all 0.3s ease;
+}
+
+.therapeutic-portfolio-last {
+  border-right: none;
+}
+
+.therapeutic-portfolio-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.therapeutic-portfolio-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.therapeutic-portfolio-icon i {
+  font-size: 2.3rem;
+  color: #2563eb;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.therapeutic-portfolio-content h5 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.therapeutic-portfolio-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 991px) {
+  .therapeutic-portfolio-card {
+    border-right: none;
+
+    border-bottom: 1px solid #ececec;
+
+    padding: 24px;
+  }
+
+  .therapeutic-portfolio-last {
+    border-bottom: none;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 576px) {
+  .therapeutic-portfolio-section {
+    padding: 60px 0;
+  }
+
+  .therapeutic-portfolio-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .therapeutic-portfolio-card {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 18px;
+  }
+
+  .therapeutic-portfolio-icon i {
+    font-size: 2rem;
+  }
+
+  .therapeutic-portfolio-content h5 {
+    font-size: 1.05rem;
+  }
+}

@@ -1,4 +1,5 @@
 import "../styles/homeSecCardRow.css";
+import { Link } from "react-router-dom";
 
 export default function SecCardRow() {
   return (
@@ -68,10 +69,15 @@ export default function SecCardRow() {
       </div>
 
       <div className="text-center mt-5">
-        <button className="product-btn">
-          View All Products
-          <i className="bi bi-arrow-right ms-2" style={{ color: "white" }}></i>
-        </button>
+        <Link to="/products" className="nav-link active">
+          <button className="product-btn">
+            View All Products
+            <i
+              className="bi bi-arrow-right ms-2"
+              style={{ color: "white" }}
+            ></i>
+          </button>
+        </Link>
       </div>
     </div>
   );

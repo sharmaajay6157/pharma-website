@@ -46,7 +46,7 @@ export default function FirstCardRow() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12">
+          <div className="col-lg-3 col-md-6 col-12 feature-item">
             <div className="d-flex">
               <div className="icon-box">
                 <i className="bi bi-globe"></i>

@@ -4,6 +4,7 @@ import microscope from "../assets/microscope.png";
 import FirstCardRow from "./homeFirstCardRow";
 import SecCardRow from "./homeSecCardRow";
 import ThirdCardRow from "./homeTrdCardRow";
+import { Link } from "react-router-dom";
 
 function HomeLayout() {
   return (
@@ -28,17 +29,18 @@ function HomeLayout() {
             Forwell Pharmaceuticals is committed to providing high-quality
             medicines that improve lives and build a healthier tommorrow.
           </p>
-
-          <button
-            class="p-2 border rounded-4  text-white  mainPicBtn"
-            style={{ backgroundColor: "#dc2626" }}
-          >
-            Explore Our Products
-            <i
-              class="fa-solid fa-arrow-right  p-1"
-              style={{ color: "white" }}
-            ></i>
-          </button>
+          <Link to="/aboutus" className="nav-link active">
+            <button
+              class="p-2 border rounded-4  text-white  mainPicBtn"
+              style={{ backgroundColor: "#dc2626" }}
+            >
+              Explore Our Products
+              <i
+                class="fa-solid fa-arrow-right  p-1"
+                style={{ color: "white" }}
+              ></i>
+            </button>
+          </Link>
         </div>
       </div>
       {/* second div starts */}
@@ -78,16 +80,18 @@ function HomeLayout() {
             </div>
             <div className="row">
               <div className="col">
-                <button
-                  className="border p-2 rounded-4"
-                  style={{ color: "white", backgroundColor: "#dc2626" }}
-                >
-                  Know More About Us{" "}
-                  <i
-                    class="fa-solid fa-arrow-right "
-                    style={{ color: "white" }}
-                  ></i>
-                </button>
+                <Link to="/aboutus" className="nav-link active">
+                  <button
+                    className="border p-2 rounded-4"
+                    style={{ color: "white", backgroundColor: "#dc2626" }}
+                  >
+                    Know More About Us{" "}
+                    <i
+                      class="fa-solid fa-arrow-right "
+                      style={{ color: "white" }}
+                    ></i>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

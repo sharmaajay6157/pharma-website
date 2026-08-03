@@ -1,6 +1,6 @@
 .stats-section {
   background-color: #b91c1c;
-  padding: 20px 0px;
+  padding: 10px 0px 15px 0px;
   color: white;
 }
 
@@ -9,11 +9,11 @@
 }
 
 .stat-icon {
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .trdCardHead {
-  font-size: 35px;
+  font-size: 25px;
   /* font-weight: bold; */
   margin-top: 10px;
   margin-bottom: 5px;
