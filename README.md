@@ -1,16 +1,40 @@
-# React + Vite
+Instructions for the person receiving your project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Step 1: Extract your project ZIP
 
-Currently, two official plugins are available:
+Extract the ZIP file you shared. The folder should look something like this:
+Pharma_Website_Ajay/
+├── frontend/
+├── backend/
+└── database/
+└── pharmaWebsite.archive.gz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The pharmaWebsite.archive.gz file is the database backup.
 
-## React Compiler
+Step 2: Install MongoDB
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+If MongoDB is not already installed on their computer:
 
-## Expanding the ESLint configuration
+1. Download and install MongoDB Community Server.
+2. During installation, enable Install MongoD as a Service if that option is available.
+3. Start the MongoDB service using Windows Services (services.msc) if it is not already running.
+4. Install MongoDB Database Tools as well.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+They need both the database server and the tools to restore your backup.
+
+Step 3: Open PowerShell in the project folder
+
+Open the extracted Forwell-Pharmaceuticals folder in File Explorer.
+Open the database folder, click the address bar, type powershell, and press Enter.
+They should now be in the folder containing pharmaWebsite.archive.gz.
+
+Step 4: Restore the database
+
+They should run this command in PowerShell:
+mongorestore --uri="mongodb://127.0.0.1:27017" --archive="pharmaWebsite.archive.gz" --gzip
+
+This restores the database and its collections to their local MongoDB server.
+
+The resulting database name will be pharmaWebsite, because that name is stored in your backup.
+
+Important: If they already have a database with the same name and collections, the restore may encounter duplicate-key errors. They should back up their existing data first and avoid using --drop unless they intentionally want to replace existing collections.
